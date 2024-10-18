@@ -48,14 +48,29 @@ function expandImage(index) {
     modal.style.display = 'flex';
 }
 
+// Change image based on the step (+1 for next, -1 for previous)
 function changeImage(step) {
     currentIndex = (currentIndex + step + window.images.length) % window.images.length;
     expandImage(currentIndex);
 }
 
+// Close the lightbox modal
 function closeLightbox(event) {
     const modal = document.getElementById('lightboxModal');
     if (event.target === modal || event.target.classList.contains('close')) {
         modal.style.display = 'none';
     }
 }
+
+// Listen for keydown events to navigate images
+document.addEventListener('keydown', function (event) {
+    if (document.getElementById('lightboxModal').style.display === 'flex') {
+        if (event.key === 'ArrowLeft') {
+            changeImage(-1); // Go to previous image
+        } else if (event.key === 'ArrowRight') {
+            changeImage(1); // Go to next image
+        } else if (event.key === 'Escape') {
+            closeLightbox(event); // Close lightbox on Escape
+        }
+    }
+});
