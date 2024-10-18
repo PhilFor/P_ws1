@@ -72,7 +72,7 @@ def generate_config(image_directory, config_file):
     image_files = [
         os.path.join(image_directory, f)
         for f in os.listdir(image_directory)
-        if f.lower().endswith((".png", ".jpg", ".jpeg", ".gif", ".bmp"))
+        if f.lower().endswith((".png", ".jpg", ".jpeg", ".gif", ".bmp", ".avif"))
     ]
 
     # Prepare a list to hold image data

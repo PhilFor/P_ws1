@@ -9,6 +9,7 @@ fetch('config.json')
             const imgElement = document.createElement('img');
             imgElement.src = image.src;
             imgElement.className = 'photo';
+            imgElement.alt = image.alt || `Photo ${index + 1}`; // Add alt attribute
             imgElement.onclick = () => expandImage(index);
             photoGallery.appendChild(imgElement);
         });
@@ -29,6 +30,7 @@ function expandImage(index) {
     const exifInfo = document.getElementById('exifInfo');
 
     expandedImg.src = window.images[currentIndex].src;
+    expandedImg.alt = window.images[currentIndex].alt || `Expanded view of Photo ${currentIndex + 1}`; // Add alt attribute
 
     // Populate EXIF info
     let exifContent = '';
