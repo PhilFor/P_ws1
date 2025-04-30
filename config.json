@@ -1,6 +1,30 @@
 {
     "images": [
         {
+            "src": "\\assets\\photos\\Cabinet-09.jpg",
+            "camera": "Canon EOS R5",
+            "aperture": "2.8",
+            "shutter_speed": "1/500"
+        },
+        {
+            "src": "\\assets\\photos\\Cabinet-54.jpg",
+            "camera": "Canon EOS R5",
+            "aperture": "5.6",
+            "shutter_speed": "1/160"
+        },
+        {
+            "src": "\\assets\\photos\\Charleroi-03.jpg",
+            "camera": "Canon EOS R5",
+            "aperture": "1.8",
+            "shutter_speed": "1/20"
+        },
+        {
+            "src": "\\assets\\photos\\Ile_oiseaux-2.jpg",
+            "camera": "Canon EOS R5",
+            "aperture": "2.8",
+            "shutter_speed": "1/800"
+        },
+        {
             "src": "\\assets\\photos\\img-05.jpg",
             "camera": "Canon EOS 700D",
             "aperture": "5.6",
